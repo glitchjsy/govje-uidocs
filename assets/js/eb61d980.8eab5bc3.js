@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkgovje_uidocs=self.webpackChunkgovje_uidocs||[]).push([[499],{9867:e=>{e.exports=JSON.parse('{"title":"Components","slug":"/category/components","permalink":"/category/components","navigation":{"previous":{"title":"Colours","permalink":"/styles/colours"},"next":{"title":"Buttons","permalink":"/components/button"}}}')}}]);
