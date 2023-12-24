@@ -16,7 +16,7 @@ const config = {
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'glitchjsy', // Usually your GitHub org/user name.
-  projectName: 'uidocs', // Usually your repo name.
+  projectName: 'govje-uidocs', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
