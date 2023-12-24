@@ -37,7 +37,7 @@ const config = {
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
           routeBasePath: "/",
-          editUrl: "https://github.com/glitchjsy/uidocs"
+          editUrl: "https://github.com/glitchjsy/govje-uidocs"
         },
         blog: false,
         theme: {
