@@ -1,0 +1,44 @@
+---
+title: Breadcrumbs
+---
+
+import Example from '@site/src/components/Example'
+
+# Breadcrumbs
+The breadcrumb feature guides users to navigate through a website's structure, aiding their understanding of their current location and enabling easy movement between different levels.
+
+<Example
+    height="40px"
+    component={
+        <div class="govje-breadcrumbs">
+            <ul>
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">Passports, travel and living abroad</a>
+                </li>
+                <li>
+                    <a href="#">Travel abroad</a>
+                </li>
+            </ul>
+        </div>
+    }
+    samples={[
+        { label: "HTML", language: "html", code: (
+            `<div class="govje-breadcrumbs">
+            <ul>
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">Passports, travel and living abroad</a>
+                </li>
+                <li>
+                    <a href="#">Travel abroad</a>
+                </li>
+            </ul>
+        </div>`
+        )}
+    ]}
+/>

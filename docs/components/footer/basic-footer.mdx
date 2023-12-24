@@ -1,0 +1,349 @@
+---
+title: Basic Footer
+---
+
+import Example from '@site/src/components/Example'
+
+# Basic Footer
+The basic footer component is used at the bottom of every page.
+
+### Regular footer
+This is the footer used on gov.je, blog.gov.je, one.gov.je and more.
+You should use this footer, along with an [our sites section](/our-sites), when possible.
+
+:::warning NOTICE
+The home page of gov.je uses a slightly modified version of this footer. See [Gov.je home page footer](#govje-home-page-footer) below.
+:::
+
+<Example
+    height="200px"
+    component={
+        <footer class="govje-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <dl class="govje-footer--social-media">
+                            <dt>Find us on social media</dt>
+                            <dd>
+                                <a title="Twitter opens in new window" href="https://twitter.com/govjersey" target="_blank">
+                                    <span class="fa-stack fa-lg">
+                                        <span class="fa fa-circle fa-stack-2x"></span>
+                                        <span class="fab fa-twitter fa-stack-1x fa-inverse"></span>
+                                    </span>
+                                    <span class="govje-accessibility">Twitter opens in new window</span>
+                                </a>
+                            </dd>
+                            <dd>
+                                <a title="Facebook opens in new window" href="https://www.facebook.com/GovernmentofJersey" target="_blank">
+                                    <span class="fa-stack fa-lg">
+                                        <span class="fa fa-circle fa-stack-2x"></span>
+                                        <span class="fab fa-facebook fa-stack-1x fa-inverse"></span>
+                                    </span>
+                                    <span class="govje-accessibility">Facebook opens in new window</span>
+                                </a>
+                            </dd>
+                            <dd>
+                                <a title="LinkedIn opens in new window" href="https://www.linkedin.com/company/government-of-jersey" target="_blank">
+                                    <span class="fa-stack fa-lg">
+                                        <span class="fa fa-circle fa-stack-2x"></span>
+                                        <span class="fab fa-linkedin fa-stack-1x fa-inverse"></span>
+                                    </span>
+                                    <span class="govje-accessibility">LinkedIn opens in new window</span>
+                                </a>
+                            </dd>
+                            <dd>
+                                <a title="Instagram opens in new window" href="https://www.instagram.com/governmentofjersey" target="_blank">
+                                    <span class="fa-stack fa-lg">
+                                        <span class="fa fa-circle fa-stack-2x"></span>
+                                        <span class="fab fa-instagram fa-stack-1x fa-inverse"></span>
+                                    </span>
+                                    <span class="govje-accessibility">Instagram opens in new window</span>
+                                </a>
+                            </dd>
+                            <dd>
+                                <a title="YouTube opens in new window" href="https://www.youtube.com/governmentofjersey" target="_blank">
+                                    <span class="fa-stack fa-lg">
+                                        <span class="fa fa-circle fa-stack-2x"></span>
+                                        <span class="fab fa-youtube fa-stack-1x fa-inverse"></span>
+                                    </span>
+                                    <span class="govje-accessibility">YouTube opens in new window</span>
+                                </a>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <ul class="govje-footer--links">
+                            <li><a href="https://gov.je/Pages/Accessibility.aspx">Accessibility</a></li>
+                            <li><a href="https://one.gov.je/service/Customer_feedback">Customer feedback</a></li>
+                            <li><a href="https://gov.je/Pages/Privacy.aspx">Privacy</a></li>
+                            <li><a href="https://gov.je/Pages/Terms.aspx">Terms and conditions</a></li>
+                            <li><a href="https://gov.je/Pages/Sitemap.aspx">Sitemap</a></li>
+                            <li><a href="https://gov.je/Pages/TranslateSite.aspx">Translate</a></li>
+                            <li class="govje-footer--copyright">© States of Jersey 2010 - 2023</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    }
+    samples={[
+        { label: "HTML", language: "html", code: (
+            `<footer class="govje-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <dl class="govje-footer--social-media">
+                            <dt>Find us on social media</dt>
+                            <dd>
+                                <a title="Twitter opens in new window" href="https://twitter.com/govjersey" target="_blank">
+                                    <span class="fa-stack fa-lg">
+                                        <span class="fa fa-circle fa-stack-2x"></span>
+                                        <span class="fab fa-twitter fa-stack-1x fa-inverse"></span>
+                                    </span>
+                                    <span class="govje-accessibility">Twitter opens in new window</span>
+                                </a>
+                            </dd>
+                            <dd>
+                                <a title="Facebook opens in new window" href="https://www.facebook.com/GovernmentofJersey" target="_blank">
+                                    <span class="fa-stack fa-lg">
+                                        <span class="fa fa-circle fa-stack-2x"></span>
+                                        <span class="fab fa-facebook fa-stack-1x fa-inverse"></span>
+                                    </span>
+                                    <span class="govje-accessibility">Facebook opens in new window</span>
+                                </a>
+                            </dd>
+                            <dd>
+                                <a title="LinkedIn opens in new window" href="https://www.linkedin.com/company/government-of-jersey" target="_blank">
+                                    <span class="fa-stack fa-lg">
+                                        <span class="fa fa-circle fa-stack-2x"></span>
+                                        <span class="fab fa-linkedin fa-stack-1x fa-inverse"></span>
+                                    </span>
+                                    <span class="govje-accessibility">LinkedIn opens in new window</span>
+                                </a>
+                            </dd>
+                            <dd>
+                                <a title="Instagram opens in new window" href="https://www.instagram.com/governmentofjersey" target="_blank">
+                                    <span class="fa-stack fa-lg">
+                                        <span class="fa fa-circle fa-stack-2x"></span>
+                                        <span class="fab fa-instagram fa-stack-1x fa-inverse"></span>
+                                    </span>
+                                    <span class="govje-accessibility">Instagram opens in new window</span>
+                                </a>
+                            </dd>
+                            <dd>
+                                <a title="YouTube opens in new window" href="https://www.youtube.com/governmentofjersey" target="_blank">
+                                    <span class="fa-stack fa-lg">
+                                        <span class="fa fa-circle fa-stack-2x"></span>
+                                        <span class="fab fa-youtube fa-stack-1x fa-inverse"></span>
+                                    </span>
+                                    <span class="govje-accessibility">YouTube opens in new window</span>
+                                </a>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <ul class="govje-footer--links">
+                            <li><a href="https://gov.je/Pages/Accessibility.aspx">Accessibility</a></li>
+                            <li><a href="https://one.gov.je/service/Customer_feedback">Customer feedback</a></li>
+                            <li><a href="https://gov.je/Pages/Privacy.aspx">Privacy</a></li>
+                            <li><a href="https://gov.je/Pages/Terms.aspx">Terms and conditions</a></li>
+                            <li><a href="https://gov.je/Pages/Sitemap.aspx">Sitemap</a></li>
+                            <li><a href="https://gov.je/Pages/TranslateSite.aspx">Translate</a></li>
+                            <li class="govje-footer--copyright">© States of Jersey 2010 - 2023</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>`
+        )}
+    ]}
+/>
+
+### Regular footer with no social links
+This is type of footer is best for internal sites. It is currently used publicly on https://customs.gst.gov.je.
+
+<Example
+    height="100px"
+    component={
+        <footer class="govje-footer">
+            <div class="container">
+                <ul class="govje-footer--links">
+                    <li><a href="https://www.gov.je/Government/Departments/PrivacyPoliciesRetentionSchedules/JHAPrivacyPolicies/Pages/CustomsImmigration.aspx">Data protection</a></li>
+                    <li><a href="https://gov.je/Pages/Privacy.aspx">Privacy</a></li>
+                    <li><a href="https://gov.je/Pages/Terms.aspx">Terms and conditions</a></li>
+                    <li class="govje-footer--copyright">© States of Jersey 2023</li>
+                </ul>
+            </div>
+        </footer>
+    }
+    samples={[
+        { label: "HTML", language: "html", code: (
+            `<footer class="govje-footer">
+            <div class="container">
+                <ul class="govje-footer--links">
+                    <li><a href="https://www.gov.je/Government/Departments/PrivacyPoliciesRetentionSchedules/JHAPrivacyPolicies/Pages/CustomsImmigration.aspx">Data protection</a></li>
+                    <li><a href="https://gov.je/Pages/Privacy.aspx">Privacy</a></li>
+                    <li><a href="https://gov.je/Pages/Terms.aspx">Terms and conditions</a></li>
+                    <li class="govje-footer--copyright">© States of Jersey 2023</li>
+                </ul>
+            </div>
+        </footer>`
+        )}
+    ]}
+/>
+
+### Gov.je home page footer
+This footer is __ONLY__ used on the home page of gov.je.
+It's slightly different in the fact the `Find us on social media` text is omitted and social links don't have a circular background.
+
+<Example
+    height="200px"
+    component={
+        <footer class="govje-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <dl class="govje-footer--social-media govje-footer--homepage">
+                            <dt>Find us on social media</dt>
+                            <dd>
+                                <a title="Twitter opens in new window" href="https://twitter.com/govjersey" target="_blank">
+                                    <span class="fa-stack fa-lg">
+                                        <span class="fa fa-circle fa-stack-2x"></span>
+                                        <span class="fab fa-twitter fa-stack-1x fa-inverse"></span>
+                                    </span>
+                                    <span class="govje-accessibility">Twitter opens in new window</span>
+                                </a>
+                            </dd>
+                            <dd>
+                                <a title="Facebook opens in new window" href="https://www.facebook.com/GovernmentofJersey" target="_blank">
+                                    <span class="fa-stack fa-lg">
+                                        <span class="fa fa-circle fa-stack-2x"></span>
+                                        <span class="fab fa-facebook fa-stack-1x fa-inverse"></span>
+                                    </span>
+                                    <span class="govje-accessibility">Facebook opens in new window</span>
+                                </a>
+                            </dd>
+                            <dd>
+                                <a title="LinkedIn opens in new window" href="https://www.linkedin.com/company/government-of-jersey" target="_blank">
+                                    <span class="fa-stack fa-lg">
+                                        <span class="fa fa-circle fa-stack-2x"></span>
+                                        <span class="fab fa-linkedin fa-stack-1x fa-inverse"></span>
+                                    </span>
+                                    <span class="govje-accessibility">LinkedIn opens in new window</span>
+                                </a>
+                            </dd>
+                            <dd>
+                                <a title="Instagram opens in new window" href="https://www.instagram.com/governmentofjersey" target="_blank">
+                                    <span class="fa-stack fa-lg">
+                                        <span class="fa fa-circle fa-stack-2x"></span>
+                                        <span class="fab fa-instagram fa-stack-1x fa-inverse"></span>
+                                    </span>
+                                    <span class="govje-accessibility">Instagram opens in new window</span>
+                                </a>
+                            </dd>
+                            <dd>
+                                <a title="YouTube opens in new window" href="https://www.youtube.com/governmentofjersey" target="_blank">
+                                    <span class="fa-stack fa-lg">
+                                        <span class="fa fa-circle fa-stack-2x"></span>
+                                        <span class="fab fa-youtube fa-stack-1x fa-inverse"></span>
+                                    </span>
+                                    <span class="govje-accessibility">YouTube opens in new window</span>
+                                </a>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <ul class="govje-footer--links">
+                            <li><a href="https://gov.je/Pages/Accessibility.aspx">Accessibility</a></li>
+                            <li><a href="https://one.gov.je/service/Customer_feedback">Customer feedback</a></li>
+                            <li><a href="https://gov.je/Pages/Privacy.aspx">Privacy</a></li>
+                            <li><a href="https://gov.je/Pages/Terms.aspx">Terms and conditions</a></li>
+                            <li><a href="https://gov.je/Pages/Sitemap.aspx">Sitemap</a></li>
+                            <li><a href="https://gov.je/Pages/TranslateSite.aspx">Translate</a></li>
+                            <li class="govje-footer--copyright">© States of Jersey 2010 - 2023</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    }
+    samples={[
+        { label: "HTML", language: "html", code: (
+            `<footer class="govje-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <dl class="govje-footer--social-media govje-footer--homepage">
+                            <dt>Find us on social media</dt>
+                            <dd>
+                                <a title="Twitter opens in new window" href="https://twitter.com/govjersey" target="_blank">
+                                    <span class="fa-stack fa-lg">
+                                        <span class="fa fa-circle fa-stack-2x"></span>
+                                        <span class="fab fa-twitter fa-stack-1x fa-inverse"></span>
+                                    </span>
+                                    <span class="govje-accessibility">Twitter opens in new window</span>
+                                </a>
+                            </dd>
+                            <dd>
+                                <a title="Facebook opens in new window" href="https://www.facebook.com/GovernmentofJersey" target="_blank">
+                                    <span class="fa-stack fa-lg">
+                                        <span class="fa fa-circle fa-stack-2x"></span>
+                                        <span class="fab fa-facebook fa-stack-1x fa-inverse"></span>
+                                    </span>
+                                    <span class="govje-accessibility">Facebook opens in new window</span>
+                                </a>
+                            </dd>
+                            <dd>
+                                <a title="LinkedIn opens in new window" href="https://www.linkedin.com/company/government-of-jersey" target="_blank">
+                                    <span class="fa-stack fa-lg">
+                                        <span class="fa fa-circle fa-stack-2x"></span>
+                                        <span class="fab fa-linkedin fa-stack-1x fa-inverse"></span>
+                                    </span>
+                                    <span class="govje-accessibility">LinkedIn opens in new window</span>
+                                </a>
+                            </dd>
+                            <dd>
+                                <a title="Instagram opens in new window" href="https://www.instagram.com/governmentofjersey" target="_blank">
+                                    <span class="fa-stack fa-lg">
+                                        <span class="fa fa-circle fa-stack-2x"></span>
+                                        <span class="fab fa-instagram fa-stack-1x fa-inverse"></span>
+                                    </span>
+                                    <span class="govje-accessibility">Instagram opens in new window</span>
+                                </a>
+                            </dd>
+                            <dd>
+                                <a title="YouTube opens in new window" href="https://www.youtube.com/governmentofjersey" target="_blank">
+                                    <span class="fa-stack fa-lg">
+                                        <span class="fa fa-circle fa-stack-2x"></span>
+                                        <span class="fab fa-youtube fa-stack-1x fa-inverse"></span>
+                                    </span>
+                                    <span class="govje-accessibility">YouTube opens in new window</span>
+                                </a>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <ul class="govje-footer--links">
+                            <li><a href="https://gov.je/Pages/Accessibility.aspx">Accessibility</a></li>
+                            <li><a href="https://one.gov.je/service/Customer_feedback">Customer feedback</a></li>
+                            <li><a href="https://gov.je/Pages/Privacy.aspx">Privacy</a></li>
+                            <li><a href="https://gov.je/Pages/Terms.aspx">Terms and conditions</a></li>
+                            <li><a href="https://gov.je/Pages/Sitemap.aspx">Sitemap</a></li>
+                            <li><a href="https://gov.je/Pages/TranslateSite.aspx">Translate</a></li>
+                            <li class="govje-footer--copyright">© States of Jersey 2010 - 2023</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>`
+        )}
+    ]}
+/>

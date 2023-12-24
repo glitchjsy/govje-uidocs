@@ -1,0 +1,95 @@
+---
+title: Header
+---
+
+import Example from '@site/src/components/Example'
+
+# Header
+
+### gov.je header
+<Example
+    height="100px"
+    component={
+        <header class="govje-header" role="banner">
+            <div class="govje-header--container">
+                <div class="row">
+                    <div class="col-8 col-md-6 col-lg-8">
+                        <a href="https://www.gov.je" title="gov.je home" class="govje-header--logo">
+                            <img id="M_Image2" src="https://govje.azureedge.net/images/Gov-Jersey-Crest.svg" alt="gov.je" style={{ borderWidth: 0 }} />
+                            gov.je
+                        </a>
+
+                        <div class="govje-header--info">
+                            <div class="d-none d-lg-block infoEnglish">Information and public services for the Island of Jersey</div>
+                            <div class="d-none d-lg-block">L'înformâtion et les sèrvices publyis pouor I'Île dé Jèrri</div>
+                        </div>
+                    </div>
+                    <div class="col-4 col-md-6 col-lg-4">
+                        <ul class="govje-header--links">
+                            <li>
+                                <a href="https://gov.je/Pages/Contacts.aspx" title="Open contacts page">Contacts</a>
+                            </li>
+                            <li>
+                                <a href="https://gov.je/Pages/TranslateSite.aspx" title="Open site translate page">Translate</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);" title="Opens login page">Login</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+    }
+    samples={[
+        { label: "HTML", language: "html", code: (
+            `<header class="govje-header" role="banner">
+            <div class="govje-header--container">
+                <a href="https://www.gov.je" title="gov.je home" class="govje-header--logo">
+                    <img id="M_Image2" src="https://govje.azureedge.net/images/Gov-Jersey-Crest.svg" alt="gov.je" style={{ borderWidth: 0 }} />
+                    gov.je
+                </a>
+
+                <div class="govje-header--info">
+                    <div class="infoEnglish">Information and public services for the Island of Jersey</div>
+                    <div>L'înformâtion et les sèrvices publyis pouor I'Île dé Jèrri</div>
+                </div>
+            </div>
+        </header>`
+        ) }
+    ]}
+/>
+
+### one.gov.je header
+
+<Example
+    height="100px"
+    component={
+        <header class="govje-header" role="banner">
+            <div class="govje-header--container">
+                <a href="https://www.gov.je" title="gov.je home" class="govje-header--logo">
+                    <img id="M_Image2" src="https://govje.azureedge.net/images/one-gov-je-logo-goj.svg" alt="one.gov.je" style={{ borderWidth: 0 }} />
+                </a>
+
+                <div class="govje-header--info" style={{ marginTop: "25px" }}>
+                    <div>Access to government services in Jersey</div>
+                </div>
+            </div>
+        </header>
+    }
+    samples={[
+        { label: "HTML", language: "html", code: (
+            `<header class="govje-header" role="banner">
+            <div class="govje-header--container">
+                <a href="https://www.gov.je" title="gov.je home" class="govje-header--logo">
+                    <img id="M_Image2" src="https://govje.azureedge.net/images/one-gov-je-logo-goj.svg" alt="one.gov.je" style={{ borderWidth: 0 }} />
+                </a>
+
+                <div class="govje-header--info" style="width:25px">
+                    <div>Access to government services in Jersey</div>
+                </div>
+            </div>
+        </header>`
+        ) }
+    ]}
+/>
