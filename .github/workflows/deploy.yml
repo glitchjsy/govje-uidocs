@@ -29,6 +29,9 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      - name: Install govje-frontend
+        run: npm install ../govje-frontend/packages/react
+
       # Build the Docusaurus site
       - name: Build Docusaurus site
         run: npm run build
