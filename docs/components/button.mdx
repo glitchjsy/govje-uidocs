@@ -1,0 +1,78 @@
+---
+title: Buttons
+hide_table_of_contents: true
+---
+
+import Example from '@site/src/components/Example'
+import NewExample from '@site/src/components/NewExample'
+
+import defaultButton from '@site/src/examples/buttons/default'
+import primaryButton from '@site/src/examples/buttons/primary'
+import secondaryButton from '@site/src/examples/buttons/secondary'
+import cancelButton from '@site/src/examples/buttons/cancel'
+import ctaButton from '@site/src/examples/buttons/cta'
+
+# Buttons
+Use the button component to help users carry out an action like starting an application or saving their information.
+
+Write button text in sentence case, describing the action it performs. For example:
+* __'Search'__ to search the site
+* __'Back to top'__ to return to the top of the page
+* __'Report a benefit thief'__ a call to action indicating the start of a form
+* __'Cancel'__ to stop the current task
+
+:::warning Think before you use
+Consider whether you should use a link instead of a button. For example, to provide access to a document such as a PDF, use a link.
+:::
+
+### Default button
+The default button style that uses the Government's signature red colour.
+This type of button is rarely used with the Primary button being preferred.
+
+<NewExample
+    height="50px"
+    component={defaultButton.component()}
+    html={defaultButton.html()}
+    react={defaultButton.react()}
+/>
+
+### Primary button
+Use a primary button for positive actions, such as a continue button, as users respond better to green buttons.
+If you are linking to a form, consider a [Call to action](#call-to-action-button) primary button.
+
+<NewExample
+    height="50px"
+    component={primaryButton.component()}
+    html={primaryButton.html()}
+    react={primaryButton.react()}
+/>
+
+### Secondary button
+
+<NewExample
+    height="50px"
+    component={secondaryButton.component()}
+    html={secondaryButton.html()}
+    react={secondaryButton.react()}
+/>
+
+### Cancel button
+
+<NewExample
+    height="50px"
+    component={cancelButton.component()}
+    html={cancelButton.html()}
+    react={cancelButton.react()}
+/>
+
+### Call to action button
+* The default option is rarely used
+* Use the primary option for online forms
+* Use the secondary option for a request to service and if you have multiple call to actions secondary to the main form
+
+<NewExample
+    height="50px"
+    component={ctaButton.component()}
+    html={ctaButton.html()}
+    react={ctaButton.react()}
+/>

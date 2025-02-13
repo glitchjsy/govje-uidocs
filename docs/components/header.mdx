@@ -1,0 +1,55 @@
+---
+title: Header
+hide_table_of_contents: true
+---
+
+import NewExample from '@site/src/components/NewExample'
+
+import basicHeader from '@site/src/examples/header/basic'
+import withInfoHeader from '@site/src/examples/header/with-info'
+import serviceHeader from '@site/src/examples/header/service'
+
+export const headerProps = [
+    { name: "variant", required: false, type: "string", summary: "The header style. Default value is \"default\". Available values: \"default\", \"service\"" },
+    { name: "serviceName", required: false, type: "string", summary: "The name of the current service. This is only shown if variant is \"service\"" },
+    { name: "showInfo", required: false, type: "boolean", summary: "Show the \"Information and public services for the Island of Jersey\" text. Only shown if variant is \"default\"" }
+]
+
+# Header
+
+### Basic Header
+This is the most basic version of the gov.je header, with no text and no links. This likely should not be used, but is here for reference.
+
+<NewExample
+    height="100px"
+    component={basicHeader.component()}
+    html={basicHeader.html()}
+    react={basicHeader.react()}
+    reactProps={headerProps}
+/>
+
+### Header with Info
+This type of header is the default that is used on most sites.
+
+:::info TODO
+There is currently an issue with the CSS in govje-frontend with the info text.
+:::
+
+<NewExample
+    height="100px"
+    component={withInfoHeader.component()}
+    html={withInfoHeader.html()}
+    react={withInfoHeader.react()}
+    reactProps={headerProps}
+/>
+
+### Service Header
+This type of header is only used for services, such as [Vehicle Search](https://vehicle-search.gov.je) and [Car Park Fine Payments](https://webservices.gov.je/ParkingPayments/PCNStart.aspx).
+
+<NewExample
+    height="100px"
+    component={serviceHeader.component()}
+    html={serviceHeader.html()}
+    react={serviceHeader.react()}
+    reactProps={headerProps}
+/>

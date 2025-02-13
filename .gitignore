@@ -1,0 +1,8 @@
+node_modules/
+build/
+.docusaurus/
+.DS_Store
+package-lock.json
+.vs/
+.vscode/
+.idea/

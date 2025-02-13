@@ -1,0 +1,50 @@
+.exampleView {
+    border: 1px solid #ececec;
+}
+
+.component {
+    padding: 20px;
+}
+
+.tabsWrapper {
+    padding: 10px 20px;
+    border-top: 1px solid #ececec;
+}
+
+.tabLabelsWrapper {
+    display: flex;
+}
+
+.codeSample {
+    border-bottom: 1px solid #ececec;
+    margin-bottom: 10px;
+}
+
+.codeSample:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.sampleLabel {
+    color: #1d70b8;
+    text-decoration: underline;
+    cursor: pointer;
+    padding: 8px 0;
+    margin-right: 25px;
+    padding-right: 25px;
+    border-right: 1px solid #e6e6e6;
+}
+
+.sampleLabel:hover {
+    color: #155799;
+}
+
+.sampleContent {
+    margin-top: 20px;
+}
+
+.badge {
+    padding: 1px 5px;
+    border-radius: 5px;
+    font-size: 14px;
+}

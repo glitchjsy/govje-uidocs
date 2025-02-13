@@ -1,0 +1,236 @@
+---
+title: Tables
+hide_table_of_contents: true
+---
+
+import Example from '@site/src/components/Example'
+
+# Tables
+
+### Red header row
+This table style suits small amounts of data. The red header is highly visible which makes the table stand out from the text on the page.
+
+<Example
+    height="150px"
+    component={
+        <table class="govje-table govje-table--default">
+            <thead>
+                <tr>
+                    <th>School</th>
+                    <th colspan="1">Parish</th>
+                    <th>Website</th>
+                    <th>Contact number</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Beaulieu Primary Convent School</td>
+                    <td colspan="1">St Helier</td>
+                    <td>
+                        <a href="https://www.beaulieu.jersey.sch.uk/" target="_blank" class="govje-link">Beaulieu Convent School</a>
+                    </td>
+                    <td><a href="tel:+44 1534731280" class="govje-link">+44 (0) 1534 731280</a></td>
+                </tr>
+                <tr>
+                    <td>De La Salle Primary School</td>
+                    <td colspan="1">St Saviour</td>
+                    <td><a href="https://www.dls-jersey.co.uk/" target="_blank" class="govje-link">De La Salle College</a></td>
+                    <td><a href="tel:+44 1534754150" class="govje-link">+44 (0) 1534 754150</a></td>
+                </tr>
+                <tr>
+                    <td>FCJ Primary School</td>
+                    <td colspan="1">St Saviour</td>
+                    <td><a href="https://www.fcj.sch.je/" target="_blank" class="govje-link">FCJ Primary School</a></td>
+                    <td><a href="tel:+44 1534723063" class="govje-link">+44 (0) 1534 723063</a></td>
+                </tr>
+            </tbody>
+        </table>
+    }
+    samples={[
+        { label: "HTML", language: "html", code: (
+            `<table class="govje-table govje-table--default">
+            <thead>
+                <tr>
+                    <th>School</th>
+                    <th colspan="1">Parish</th>
+                    <th>Website</th>
+                    <th>Contact number</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Beaulieu Primary Convent School</td>
+                    <td colspan="1">St Helier</td>
+                    <td>
+                        <a href="https://www.beaulieu.jersey.sch.uk/" target="_blank" class="govje-link">Beaulieu Convent School</a>
+                    </td>
+                    <td><a href="tel:+44 1534731280" class="govje-link">+44 (0) 1534 731280</a></td>
+                </tr>
+                <tr>
+                    <td>De La Salle Primary School</td>
+                    <td colspan="1">St Saviour</td>
+                    <td><a href="https://www.dls-jersey.co.uk/" target="_blank" class="govje-link">De La Salle College</a></td>
+                    <td><a href="tel:+44 1534754150" class="govje-link">+44 (0) 1534 754150</a></td>
+                </tr>
+                <tr>
+                    <td>FCJ Primary School</td>
+                    <td colspan="1">St Saviour</td>
+                    <td><a href="https://www.fcj.sch.je/" target="_blank" class="govje-link">FCJ Primary School</a></td>
+                    <td><a href="tel:+44 1534723063" class="govje-link">+44 (0) 1534 723063</a></td>
+                </tr>
+            </tbody>
+        </table>`
+        )}
+    ]}
+/>
+
+### Red header with grey first column
+This table is suitable for larger style tables. The grey 1st column helps make the data easier for users to read. It's not suitable for tables of three columns width or less.
+
+<Example
+    height="170px"
+    component={
+        <table cellspacing="0" width="100%" class="govje-table govje-table--default">
+            <tbody>
+                <tr>
+                    <th rowspan="1" colspan="1"></th>
+                    <th rowspan="1" colspan="1">​Hydrogen Chloride</th>
+                    <th rowspan="1" colspan="1">​Sulpher Dioxide</th>
+                    <th rowspan="1" colspan="1">Nitrous Oxide</th>
+                </tr>
+                <tr>
+                    <th rowspan="1" colspan="1" class="govje-table--first-row"></th>
+                    <td colspan="6" style={{ textAlign: "center" }}>Expressed as a percentage of the maximum 30 minute limit</td>
+                </tr>
+                <tr>
+                    <th rowspan="1" colspan="1" class="govje-table--first-row">January</th>
+                    <td rowspan="1" colspan="1">12.98%</td>
+                    <td rowspan="1" colspan="1">9.52%</td>
+                    <td rowspan="1" colspan="1">40.94%</td>
+                </tr>
+                <tr>
+                    <th rowspan="1" colspan="1" class="govje-table--first-row">February</th>
+                    <td rowspan="1" colspan="1">14.01%</td>
+                    <td rowspan="1" colspan="1">12.86%</td>
+                    <td rowspan="1" colspan="1">45.36%</td>
+                </tr>
+            </tbody>
+        </table>
+    }
+    samples={[
+        { label: "HTML", language: "html", code: (
+            `<table cellspacing="0" width="100%" class="govje-table govje-table--default">
+            <tbody>
+                <tr>
+                    <th rowspan="1" colspan="1"></th>
+                    <th rowspan="1" colspan="1">​Hydrogen Chloride</th>
+                    <th rowspan="1" colspan="1">​Sulpher Dioxide</th>
+                    <th rowspan="1" colspan="1">Nitrous Oxide</th>
+                </tr>
+                <tr>
+                    <th rowspan="1" colspan="1" class="govje-table--first-row"></th>
+                    <td colspan="6" style={{ textAlign: "center" }}>Expressed as a percentage of the maximum 30 minute limit</td>
+                </tr>
+                <tr>
+                    <th rowspan="1" colspan="1" class="govje-table--first-row">January</th>
+                    <td rowspan="1" colspan="1">12.98%</td>
+                    <td rowspan="1" colspan="1">9.52%</td>
+                    <td rowspan="1" colspan="1">40.94%</td>
+                </tr>
+                <tr>
+                    <th rowspan="1" colspan="1" class="govje-table--first-row">February</th>
+                    <td rowspan="1" colspan="1">14.01%</td>
+                    <td rowspan="1" colspan="1">12.86%</td>
+                    <td rowspan="1" colspan="1">45.36%</td>
+                </tr>
+            </tbody>
+        </table>`
+        )}
+    ]}
+/>
+
+### No header row
+This table is useful for showing data in a list.
+
+
+<Example
+    height="150px"
+    component={
+        <table width="100%" class="govje-table" cellspacing="0">
+            <tbody>
+                <tr>
+                    <th rowspan="1" colspan="1" style={{ width: "50%" }}>
+                        <p>Parking</p>
+                    </th>
+                    <td>
+                        <p>Unit charge the same as paycards </p>
+                    </td>
+                </tr>
+                <tr>
+                    <th rowspan="1" colspan="1" style={{ width: "50%" }}>
+                        <p>Text reminders</p>
+                    </th>
+                    <td>
+                        <p>20&nbsp;pence per text</p>
+                    </td>
+                </tr>
+                <tr>
+                    <th rowspan="1" colspan="1" style={{ width: "50%" }}>
+                        <p>Text receipts</p>
+                    </th>
+                    <td>
+                        <p>20&nbsp;pence per text</p>
+                    </td>
+                </tr>
+                <tr>
+                    <th rowspan="1" colspan="1" style={{ width: "50%" }}>
+                        <p>Email receipts</p>
+                    </th>
+                    <td>
+                        <p>Free</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    }
+    samples={[
+        { label: "HTML", language: "html", code: (
+            `<table width="100%" class="govje-table" cellspacing="0">
+            <tbody>
+                <tr>
+                    <th rowspan="1" colspan="1" style="width:50%">
+                        <p>Parking</p>
+                    </th>
+                    <td>
+                        <p>Unit charge the same as paycards</p>
+                    </td>
+                </tr>
+                <tr>
+                    <th rowspan="1" colspan="1" style="width:50%">
+                        <p>Text reminders</p>
+                    </th>
+                    <td>
+                        <p>20&nbsp;pence per text</p>
+                    </td>
+                </tr>
+                <tr>
+                    <th rowspan="1" colspan="1" style="width:50%">
+                        <p>Text receipts</p>
+                    </th>
+                    <td>
+                        <p>20&nbsp;pence per text</p>
+                    </td>
+                </tr>
+                <tr>
+                    <th rowspan="1" colspan="1" style="width:50%">
+                        <p>Email receipts</p>
+                    </th>
+                    <td>
+                        <p>Free</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>`
+        )}
+    ]}
+/>

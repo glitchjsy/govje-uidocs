@@ -1,0 +1,69 @@
+---
+title: Input
+hide_table_of_contents: true
+---
+
+import Example from '@site/src/components/Example'
+import NewExample from '@site/src/components/NewExample'
+
+import basicInput from '@site/src/examples/input/basic'
+import withLabelInput from '@site/src/examples/input/with-label'
+import withHintInput from '@site/src/examples/input/with-hint'
+import withErrorInput from '@site/src/examples/input/with-error'
+
+export const inputProps = [
+    { name: "hasError", required: false, type: "boolean", summary: "If there is an error with the input validation, this should be true" }
+]
+
+export const formGroupProps = [
+    { name: "label", required: true, type: "string", summary: "The input label" },
+    { name: "labelBold", required: false, type: "boolean", summary: "True if the label should be bold" },
+    { name: "hint", required: false, type: "string", summary: "A short summary relating to the usage of the input" },
+    { name: "error", required: false, type: "string", summary: "If there is an issue with input validation, the error message should be supplied here" },
+]
+
+# Input
+
+### Basic Input
+
+<NewExample
+    height="50px"
+    component={basicInput.component()}
+    html={basicInput.html()}
+    react={basicInput.react()}
+    reactProps={inputProps}
+/>
+
+### Input with Label
+React props shown below are for FormGroup. For Input props, see above.
+
+<NewExample
+    height="80px"
+    component={withLabelInput.component()}
+    html={withLabelInput.html()}
+    react={withLabelInput.react()}
+    reactProps={formGroupProps}
+/>
+
+
+### Input with Hint
+React props shown below are for FormGroup. For Input props, see above.
+
+<NewExample
+    height="120px"
+    component={withHintInput.component()}
+    html={withHintInput.html()}
+    react={withHintInput.react()}
+    reactProps={formGroupProps}
+/>
+
+### Input with Error
+React props shown below are for FormGroup. For Input props, see above.
+
+<NewExample
+    height="120px"
+    component={withErrorInput.component()}
+    html={withErrorInput.html()}
+    react={withErrorInput.react()}
+    reactProps={formGroupProps}
+/>

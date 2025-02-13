@@ -1,0 +1,148 @@
+---
+title: Our Sites
+hide_table_of_contents: true
+---
+
+import Example from '@site/src/components/Example'
+
+# Our Sites
+The our sites section is displayed above the [Footer](./footer) and is used to provide links to other Government websites.
+
+### Basic with title
+This is used throughout gov.je, blog.gov.je, one.gov.je, etc. It is not used on the gov.je home page.
+
+<Example
+    height="150px"
+    component={
+        <div class="govje-oursites">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="govje-oursites--title">Our sites</div>
+                        <div class="govje-oursites--links">
+                            <ul>
+                                    <li><a title="Blog opens in new window" target="_blank" href="https://blog.gov.je">Blog</a></li>
+                                    <li><a title="Digital Jersey opens in new window" target="_blank" href="https://www.digital.je/global">Digital Jersey</a></li>
+                                    <li><a title="Jersey Business opens in new window" target="_blank" href="https://www.jerseybusiness.je/">Jersey Business</a></li>
+                                    <li><a title="Jersey Finance opens in new window" target="_blank" href="https://www.jerseyfinance.je/">Jersey Finance</a></li>
+                                    <li><a title="Jersey Law opens in new window" target="_blank" href="https://www.jerseylaw.je/Pages/default.aspx">Jersey Law</a></li>
+                                    <li><a title="Jersey Sport opens in new window" target="_blank" href="https://www.jerseysport.je/">Jersey Sport</a></li>
+                                    <li><a title="Locate Jersey opens in new window" target="_blank" href="https://www.locatejersey.com/">Locate Jersey</a></li>
+                                    <li><a title="m.gov.je opens in new window" target="_blank" href="https://m.gov.je/">m.gov.je</a></li>
+                                    <li><a title="Open Data opens in new window" target="_blank" href="https://opendata.gov.je/dataset">Open Data</a></li>
+                                    <li><a title="Parishes opens in new window" target="_blank" href="http://parish.gov.je/Pages/default.aspx">Parishes</a></li>
+                                    <li><a title="Petitions opens in new window" target="_blank" href="https://petitions.gov.je/">Petitions</a></li>
+                                    <li><a title="States Assembly opens in new window" target="_blank" href="http://www.statesassembly.gov.je/">States Assembly</a></li>
+                                    <li><a title="Visit Jersey opens in new window" target="_blank" href="https://www.jersey.com/">Visit Jersey</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+    samples={[
+        { label: "HTML", language: "html", code: (
+            `<div class="govje-oursites">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="govje-oursites--title">Our sites</div>
+                        <div class="govje-oursites--links">
+                            <ul>
+                                    <li><a title="Blog opens in new window" target="_blank" href="https://blog.gov.je">Blog</a></li>
+                                    <li><a title="Digital Jersey opens in new window" target="_blank" href="https://www.digital.je/global">Digital Jersey</a></li>
+                                    <li><a title="Jersey Business opens in new window" target="_blank" href="https://www.jerseybusiness.je/">Jersey Business</a></li>
+                                    <li><a title="Jersey Finance opens in new window" target="_blank" href="https://www.jerseyfinance.je/">Jersey Finance</a></li>
+                                    <li><a title="Jersey Law opens in new window" target="_blank" href="https://www.jerseylaw.je/Pages/default.aspx">Jersey Law</a></li>
+                                    <li><a title="Jersey Sport opens in new window" target="_blank" href="https://www.jerseysport.je/">Jersey Sport</a></li>
+                                    <li><a title="Locate Jersey opens in new window" target="_blank" href="https://www.locatejersey.com/">Locate Jersey</a></li>
+                                    <li><a title="m.gov.je opens in new window" target="_blank" href="https://m.gov.je/">m.gov.je</a></li>
+                                    <li><a title="Open Data opens in new window" target="_blank" href="https://opendata.gov.je/dataset">Open Data</a></li>
+                                    <li><a title="Parishes opens in new window" target="_blank" href="http://parish.gov.je/Pages/default.aspx">Parishes</a></li>
+                                    <li><a title="Petitions opens in new window" target="_blank" href="https://petitions.gov.je/">Petitions</a></li>
+                                    <li><a title="States Assembly opens in new window" target="_blank" href="http://www.statesassembly.gov.je/">States Assembly</a></li>
+                                    <li><a title="Visit Jersey opens in new window" target="_blank" href="https://www.jersey.com/">Visit Jersey</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>`
+        )}
+    ]}
+/>
+
+
+### Basic with no title
+This is used on https://customs.gst.gov.je.
+
+<Example
+    height="150px"
+    component={
+        <div class="govje-oursites">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="govje-oursites--links">
+                            <ul>
+                                <li style={{ borderLeft: "none" }}>
+                                    <a href="https://www.gov.je/government/departments/justicehomeaffairs/departments/customsimmigration/traders/pages/exciserates.aspx" title="Excise duty rates" target="_blank">Excise duty rates</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.gov.je/travel/informationadvice/importsexports/Pages/index.aspx" title="Imports and exports" target="_blank">Imports and exports</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.gov.je/TaxesMoney/GST/GSTCustomers/Pages/DeclaringPaying.aspx" title="Paying GST and importing goods" target="_blank">Paying GST and importing goods</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.gov.je/government/departments/justicehomeaffairs/departments/customsimmigration/traders/Pages/index.aspx" title="Traders importing goods" target="_blank">Traders importing goods</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.gov.uk/trade-tariff" title="UK Trade Tariff on gov.uk" target="_blank">UK Trade Tariff on gov.uk</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.gov.je/Travel/Motoring/BuyingSellingVehicle/Pages/VehicleEmissionsDuty.aspx" title="Vehicle Emissions Duty" target="_blank">Vehicle emissions duty</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+    samples={[
+        { label: "HTML", language: "html", code: (
+            ` <div class="govje-oursites">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="govje-oursites--links">
+                            <ul>
+                                <li style={{ borderLeft: "none" }}>
+                                    <a href="https://www.gov.je/government/departments/justicehomeaffairs/departments/customsimmigration/traders/pages/exciserates.aspx" title="Excise duty rates" target="_blank">Excise duty rates</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.gov.je/travel/informationadvice/importsexports/Pages/index.aspx" title="Imports and exports" target="_blank">Imports and exports</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.gov.je/TaxesMoney/GST/GSTCustomers/Pages/DeclaringPaying.aspx" title="Paying GST and importing goods" target="_blank">Paying GST and importing goods</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.gov.je/government/departments/justicehomeaffairs/departments/customsimmigration/traders/Pages/index.aspx" title="Traders importing goods" target="_blank">Traders importing goods</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.gov.uk/trade-tariff" title="UK Trade Tariff on gov.uk" target="_blank">UK Trade Tariff on gov.uk</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.gov.je/Travel/Motoring/BuyingSellingVehicle/Pages/VehicleEmissionsDuty.aspx" title="Vehicle Emissions Duty" target="_blank">Vehicle emissions duty</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>`
+        )}
+    ]}
+/>
