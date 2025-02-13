@@ -1,0 +1,42 @@
+name: Deploy Docusaurus site to GitHub Pages
+
+# Run this workflow whenever there is a push to the master branch
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checkout the code
+      - name: Check out the code
+        uses: actions/checkout@v3
+
+      # Set up Node.js environment to build the Docusaurus site
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16'
+
+      # Install dependencies
+      - name: Install dependencies
+        run: npm install
+
+      # Build the Docusaurus site
+      - name: Build Docusaurus site
+        run: npm run build
+
+      # Copy the CNAME file to the build output directory
+      - name: Add CNAME file
+        run: cp CNAME build/CNAME
+
+      # Deploy the built site to the `gh-pages` branch
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./build
+          publish_branch: gh-pages
