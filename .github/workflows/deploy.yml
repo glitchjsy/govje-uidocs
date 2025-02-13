@@ -12,10 +12,14 @@ jobs:
 
     steps:
       # Checkout the code
-      - name: Check out the code
+      - name: Check out UIDocs repository
         uses: actions/checkout@v3
 
-      # Set up Node.js environment to build the Docusaurus site
+      # Clone the govje-frontend repository
+      - name: Clone govje-frontend
+        run: git clone https://github.com/glitchjsy/govje-frontend ../govje-frontend
+
+      # Set up Node.js environment
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
@@ -33,7 +37,7 @@ jobs:
       - name: Add CNAME file
         run: cp CNAME build/CNAME
 
-      # Deploy the built site to the `gh-pages` branch
+      # Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
